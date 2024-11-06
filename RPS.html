@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Property of Kumaillx </title>
+  
+  <link rel="stylesheet" href="RPS.css">
+
+</head>
+<body>
+
+  <!-- Main Head Title -->    
+  <p class="title"> Rock Paper Scissors </p>
+
+
+  <div class="banner">
+    <!-- Sign Image -->
+    <img src="Images/Signsall.png" class="icon">
+    
+    <!-- Start Button Image -->
+    <button class="start-btn">
+      <img src="Images/Start.png"  class="start-icon">
+    </button>
+    
+     <!-- Trophy and Heart Container -->
+    <div class="trophy-heart-container">
+      <!-- Trophy Image -->
+      <img src="Images/Trophy.png" class="trophy-icon">
+      
+      <!-- Heart Icons -->
+      <img src="Images/Hearts.png" class="heart">
+    </div>
+  </div>
+
+  <!-- Rock -->  
+  <button onclick=" playgame('Rock'); " class="move-button"> 
+    <img src="Images/Rock-sign.png" class="move-icon">
+  </button>
+
+  <!-- Paper -->
+  <button onclick=" playgame('Paper');" class="move-button"> 
+    <img src="images/Paper-sign.png" class="move-icon">
+  </button>
+
+  <!-- Scissors -->
+  <button onclick="playgame('Scissors');" class="move-button"> 
+    <img src="images/Scissors-sign.png" class="move-icon">
+  </button>
+
+  <!-- Result Paragraph on Web -->
+  <p class="js-result result"></p>
+
+  <!-- Moves Paragraph on Web -->
+  <p class="js-moves">
+    <!-- <img ..../>
+    <img ..../> -->
+  </p>
+
+  <!-- Score Paragraph on Web -->
+  <p class="js-score score"></p>
+
+  <!-- Reset Button -->
+  <button onclick=" 
+    score.wins = 0; score.losses = 0; score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+  " class="reset-score-button"> 
+  Reset Score
+  </button>
+ 
+  <!-- JavaScript -->
+  <script src="RPS.js"> </script>
+
+</body>
+
+</html>

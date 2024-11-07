@@ -30,9 +30,9 @@ var animationInterval = setInterval(()=>{
   var selected_computer_option = options[rand1]
   document.querySelector(`.js-moves`).innerHTML = 
   `You 
-  <img src="images/Qmark.png" alt="?" class="move-icon">
+  <img src="Qmark.png" alt="?" class="move-icon">
   Computer
-  <img src="images/${selected_computer_option}-sign.png" class="move-icon">
+  <img src="${selected_computer_option}-sign.png" class="move-icon">
   `;
 
 }, 100)
@@ -128,8 +128,8 @@ var animationInterval = setInterval(()=>{
     //for moves on web
     document.querySelector('.js-moves').innerHTML = 
     `You 
-    <img src="images/${playermove}-sign.png" class="move-icon">
-    <img src="images/${computerMove}-sign.png" class="move-icon">
+    <img src="${playermove}-sign.png" class="move-icon">
+    <img src="${computerMove}-sign.png" class="move-icon">
     Computer`;
   }
 
